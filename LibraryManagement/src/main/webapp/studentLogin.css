@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+
+body{
+	
+	background-color:#ccffcc;
+}
+
+h1{
+	text-align: centre;
+	margin-left: 40%;
+	color: blue;
+
+}
+.first{
+	list-style-type: circle;
+	border-style: groove;
+	
+}
