@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+
+body{
+	background-color:#ccffcc;
+}
+.second{
+	text-align:center;
+	color: black;
+	 border: 5px solid gray;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 20px 2px;
+  background-color: lightblue;
+}
+
+.first{
+	text-align: right;
+}
+
+
+input[type="submit"]{
+	background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  margin-right: 20%;
+  margin-left: 45%;
+  
+  cursor: pointer;
+}
