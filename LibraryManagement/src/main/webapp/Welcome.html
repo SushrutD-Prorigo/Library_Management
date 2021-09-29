@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript" src="demo.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 id="demo"></h1>
+	<h1 id="greet"></h1>
+	<h1 id="obj"></h1>
+	<h2 id="addition"></h2>
+	<h2 id="Array"></h2>
+	<h2 id="for_loop"></h2>
+	<h2 id="reverse"></h2>
+<script>
+
+	
+	greet("Sushrut");
+
+
+
+	
+	
+	
+	function add(number1,number2){
+		return number1+number2;
+	}
+	var result=add(10,10);
+	
+	const programingLang=["C","C++","JAVA","Python"];
+	
+document.getElementById("demo").innerHTML = "Welcome To JavaScript!";
+
+document.getElementById("addition").innerHTML=result;
+
+document.getElementById("Array").innerHTML=programingLang.toString();
+
+document.getElementById("Array").innerHTML=programingLang.reverse().toString();
+
+	
+	
+	for(let i=0;i<programingLang.length;i++)
+	{
+	if(programingLang[i]=="Python")
+		{
+		programingLang.pop();
+		programingLang.push("JavaScript");
+		}
+	
+	}
+	
+	for(let i=0;i<programingLang.length;i++)
+	{
+	name+="<br>"+programingLang[i];
+	document.getElementById("for_loop").innerHTML=name;
+	}
+	
+
+	
+</script>
+</body>
+</html>
