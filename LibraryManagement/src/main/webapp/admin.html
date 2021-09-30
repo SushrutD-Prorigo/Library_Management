@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<script type="text/javascript" src="admin.js"></script>
 <link rel="stylesheet" href="admin.css">
 <title>Library Management Admin</title>
 </head>
@@ -18,17 +19,11 @@
 		<input type="password" name="pass" value="Enter Password">
 		<br><br>
 	</div>
-		<input type="submit"  formaction="adminLogin.html"  value="Login" >
+		<input type="submit"  formaction="adminLogin.html"  value="Login" onclick="getName()" >
 	
 	</form>
 	<br>
 <script>
-	function getName()
-	{
-		var name=document.getElementByName("id").value;
-		
-		 document.getElementById("demo").innerHTML = name;
-	}
 	
 
 </script>
