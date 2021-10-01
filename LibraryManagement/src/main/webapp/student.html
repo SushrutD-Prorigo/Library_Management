@@ -2,6 +2,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>>
+	<script>
+		$(document).ready(function()
+				{
+			$(".login_button").click(function(){
+				$(location).prop('href', 'studentLogin.html')
+				
+			});
+				});
+
+	</script>
 <link rel="stylesheet" href="student.css">
 <title>Library Managemnet Student</title>
 </head>
@@ -10,14 +21,14 @@
 	<form>
 	<div class="first">
 		<label for="AdminID">StudentID : </label>
-		<input type="text" name="id" value="Enter Id">
+		<input type="text" name="id" placeholder="Enter Id">
 		<br><br>
 		<label for="psw">Password : </label>
-		<input type="password" name="pass" value="Enter Password">
+		<input type="password" name="pass" placeholder="Enter Password">
 		<br><br>
 		</div>
 		
-		<input type="submit"   formaction="studentLogin.html" value="Login">
+		<input  class="login_button" type="button" value="Login">
 		
 	</form>
 	<br>

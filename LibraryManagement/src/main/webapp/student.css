@@ -3,10 +3,11 @@
 
 
 body{
-	background-color:#ccffcc;
+	background-color:#3a74d6;
 }
 h3{
 	text-align: right;
+	color:#17197c;
 }
 
 .first{
@@ -19,12 +20,12 @@ h3{
   margin-right: 20%;
   margin-left: 20%;
   padding: 20px 2px;
-  background-color: lightblue;
+  background-color: #6293e3;
 
 	}
 	
-input[type="submit"]{
-	background-color: green;
+input[type="button"]{
+	background-color:#46679d;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -35,3 +36,5 @@ input[type="submit"]{
   
   cursor: pointer;
 }
+
+

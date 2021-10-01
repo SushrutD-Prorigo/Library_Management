@@ -2,7 +2,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<script type="text/javascript" src="admin.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>>
+	<script>
+		$(document).ready(function()
+				{
+			$(".input_button").click(function(){
+				$(location).prop('href', 'adminLogin.html')
+			});
+				});
+
+	</script>
 <link rel="stylesheet" href="admin.css">
 <title>Library Management Admin</title>
 </head>
@@ -13,13 +22,13 @@
 <form>
 	<div class="second">
 		<label for="AdminID">AdminID : </label>
-		<input type="text" name="id" value="Enter ID">
+		<input type="text" id="id" name="id" placeholder="Enter ID">
 		<br><br>
 		<label for="psw">Password : </label>
-		<input type="password" name="pass" value="Enter Password">
+		<input type="password" name="pass" placeholder="Enter Password">
 		<br><br>
 	</div>
-		<input type="submit"  formaction="adminLogin.html"  value="Login" onclick="getName()" >
+		<input class="input_button" type="button" value="Login"  >
 	
 	</form>
 	<br>
