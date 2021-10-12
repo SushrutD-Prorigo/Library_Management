@@ -4,6 +4,8 @@
 <meta charset="ISO-8859-1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+	
+	
 	$(document).ready(function(){
 	$(".view_allBooks").click(function(){
 		$("p").html("List of Books");//write code for view list of books.
@@ -20,6 +22,7 @@
 	$(document).ready(function(){
 	$(".order_Books").click(function(){
 		$("p").html("Book Ordered Successfully");//write code for Ordering book here.
+		
 	})
 	});
 	
@@ -34,6 +37,15 @@
 		$("p").html("Issue books");//write code for issue book here.
 	})
 	});
+	$(document).ready(function(){
+		$(".exit").click(function(){
+			var state=confirm("Do you want to logout..?");
+			if(state==true)
+				$(location).prop('href', 'home.html');
+			
+		})
+		
+	})
 </script>
 <link rel="stylesheet" href="studentLogin.css">
 <title>Welcome Student</title>
@@ -43,7 +55,7 @@
     <h1 class="welcome">Welcome</h1>
   </div>
   <div class="navigation">
-	<h1><a href="home.html">Logout</a></h1>
+	<button class="exit">Logout</button>
 	</div>
 	<div class="sideNav">
 		<ul class="first">

@@ -3,28 +3,44 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+	<script>
+	
 	$(document).ready(function(){
 	$(".add_books").click(function(){
-		$("p").html("Book Added Successfully");//write code for adding book here.
+		$(location).prop('href', 'addBook.html');
+		
 	})
 	});
 	
 	$(document).ready(function(){
 	$(".update_books").click(function(){
+		
 		$("p").html("Book Updated Successfully");//write code for adding book here.
 	})
 	});
 	
 	$(document).ready(function(){
 	$(".delete_books").click(function(){
-		$("p").html("Book Deleted Successfully");//write code for adding book here.
+			  var bookName = prompt("Enter book name");
+			  if (bookName != null) {
+				  var state=confirm("Do you want to delete "+bookName+"?");
+				  if(state==true)
+				  	$("p").html("Book Deleted Successfully");
+			  }
+			
+		//write code for adding book here.
 	})
 	});
 	
 	$(document).ready(function(){
 	$(".search_books").click(function(){
-		$("p").html("Book Found");//write code for adding book here.
+		 var bookName = prompt("Enter book name");
+		if(bookName !=null){
+			alert("Book Found");
+		}
+		else
+			alert("Invalid");
+		
 	})
 	});
 	
@@ -33,6 +49,16 @@
 		$("p").html("Orders");//write code for adding book here.
 	})
 	});
+	
+	$(document).ready(function(){
+		$(".exit").click(function(){
+			var state=confirm("Do you want to logout..?");
+			if(state==true)
+				$(location).prop('href', 'home.html');
+			
+		})
+		
+	})
 </script>
 <link rel="stylesheet" href="adminLogin.css">
 <title>Admin Login</title>
@@ -42,7 +68,7 @@
     <h1 class="welcome">Welcome</h1>
   </div>
   <div class="navigation">
-	<h1><a href="home.html">Logout</a></h1>
+	<button class="exit">Logout</h1>
 	</div>
 	<div class="sideNav">
 	<ul class="first">
